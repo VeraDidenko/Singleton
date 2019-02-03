@@ -13,6 +13,10 @@ class Singleton implements Serializable {
         }
     }
 
+    public String sayHi(){
+        return "Hi! I am a Singleton object and my hashcode is " + this.hashCode() + "!";
+    }
+
     static Singleton getInstance() {
 
         //if there is no instance available... create new one
